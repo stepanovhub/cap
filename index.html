@@ -10,8 +10,9 @@
 
     <title>Клуб анонимных предпринимателей</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -19,7 +20,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template -->
-    <link href="css/landing-page.min.css" rel="stylesheet">
+    <link href="css/landing-page.css" rel="stylesheet">
+    <link href="fonts/FuturaPT/stylesheet.css" rel="stylesheet">
 
 </head>
 
@@ -28,8 +30,8 @@
     <!-- Navigation -->
     <nav class="navbar navbar-light bg-light static-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Start Bootstrap</a>
-            <a class="btn btn-primary" href="#">Sign In</a>
+            <a class="navbar-brand" href="#">Клуб анонимных предпринимателей</a>
+<!--            <a class="btn btn-primary" href="#">Sign In</a> -->
         </div>
     </nav>
 
@@ -39,8 +41,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-9 mx-auto">
-                    <h1 class="mb-5">Build a landing page for your business or project and generate more leads!</h1>
+                    <h1 class="mb-5">Сообщество предпринимателей: <br/>от стартапа до списка Forbes</h1>
+                    <h5 >Найди себе новое окружение, продолжай расти и развиваться</h5>
                 </div>
+
                 <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
                     <form>
                         <div class="form-row">
@@ -237,16 +241,57 @@
                 </div>
             </div>
         </div>
+        <div id="modalGroupInfo" class="modal fade modal-fullscreen-xs" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="group-name"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Участники</p>
+                        <table class="table">
+                            <thead>
+                                <tr>			
+                                    <th scope="col">Ниша</th>
+                                    <th scope="col">Годовая выручка</th>
+                                    <th scope="col">Регион бизнеса</th>
+                                    <th scope="col">Статус участника</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody id="table-group-members">
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <!-- Bootstrap core JavaScript -->
+    <!-- Bootstrap core JavaScript
     <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
+    
     <script src="js/script.js"></script>
+    
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             Data.getGroups();
         })
+
     </script>
 
 
